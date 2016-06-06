@@ -15,6 +15,7 @@ htmlとcssのデータをメモ帳上で編集し保存。SourceTreeに戻って
 
 問2
 1.ア）hello.htmlを作成し、GitHub上に登録する。
+
 2.ボ）GitHub上でhello.htmlを更新する。
 3.ア）SorceTree上でhello.htmlを更新しコミット。更新データをGitHubにプッシュするが、既にGitHub上に別の更新データが存在している。
 4.ア）そこでプルを行い、最新のデータをSorceTreeに落とし、その上で更新データを再度コミットする。
