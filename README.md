@@ -1,4 +1,5 @@
 # 1542079.txt
+$ git config --global core.autocrlf false
 
 問1
 htmlとcssの作成は省略し、3.から行う。<br>
