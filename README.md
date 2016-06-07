@@ -192,6 +192,238 @@ lower()<br>
 オプショナル
 
 問41<br>
+date_a = date(2008,1,1)<br>
+date_b = date(2009,1,1)<br>
+result = date_b - date_a<br>
+print(result) <br>
+＝366 day,0:00:00
+
+問42<br>
+date_a.year<br>
+＝2008<br>
+date_a.month<br>
+＝1<br>
+date_a.day<br>
+＝1
+
+問43<br>
+today = date.today()<br>
+born = date(1997,1,17)<br>
+kei = today - born<br>
+print(kei)<br>
+＝7081 day
+
+問44<br>
+date.weekday(date.today())<br>
+＝1 //火曜日 <br>
+date.weekday(2008,1,1)<br>
+＝1 //火曜日
+
+問45
+書きました。
+
+問46-48<br>
+オプショナル
+
+問49<br>
+from datetime import *<br>
+datetime(2016,6,7)<br>
+＝datetime.datetime(2016,6,7,0,0)
+
+問50<br>
+date.today()<br>
+＝datetime.date(2016,6,7)
+
+問51<dr>
+from datetime import *<br>
+today = date.today()<br>
+birthday = date(1997, 1, 17)<br>
+life = today - birthday<br>
+print(life.days)<br>
+＝7081　day
+
+問52<br>
+モジュールはpythonの定義で、データ型はデータの種類のこと。<br>
+この二つの関係性を例えるならば、モジュールは本の分類（娯楽誌、教材、図鑑など）で、データ型はジャンル。
+
+問53<br>
+list_int = [0,1,2,3]<br>
+list_mix = [2,1.732,'test']<br>
+list_int + list_mix<br>
+＝[0,1,2,3,2,1.732,'test']
+
+問54<br>
+list_mix[1]<br>
+＝1.732
+
+問55<br>
+len(list_int)<br>
+＝4
+
+問56<br>
+list_int[-1]<br>
+＝3　//-は後ろから何番目、というもの
+
+問57<br>
+list_int[0] = -1<br>
+＝[-1,1,2,3]　//データは上書きされる
+
+問58<br>
+list_int.insert(1,5)<br>
+＝[-1,5,1,2,3]
+
+問59<br>
+list_int.pop(1)<br>
+＝[-1,1,2,3]
+
+問60<br>
+list_mix.remove('test')<br>
+＝[2,1.732]
+
+問61<br>
+list2 = list_int + list_mix<br>
+元のデータが消えずに新しいデータが作れる
+
+問62<>br>
+list_int.extend(list_mix)<br>
+データにデータを直接入れる方法。
+
+問63<br>
+list_f = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]<br>
+list_f[:3]<br>
+＝[0,1,1,]
+
+問64<br>
+list_a = list_f[1：]<br>
+＝[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]<br>
+
+問65<br>
+list_b = list_f[:4]<br>
+＝[0,1,1,]
+
+問66<br>
+list_test = [4, 9, 3, -1, 0]<br>
+list_test.reverse( )<br>
+＝[0,-1,3,9,4]
+
+問67<br>
+list_test.sorted( ) //ソートしたデータが別データとして保存される<br>
+＝[-1,0,3,4,9]
+
+問68<br>
+list.test = [4, 9, 3, -1, 0]<br>
+list_test.sort( )　//ソートしたデータが上書きされる<br>
+＝[-1,0,3,4,9]
+
+問69<br>
+list_test.sorted( )<br>
+list_test.reverse( )<br>
+＝[9,4,3,0,-1]
+
+問70<br>
+list_os = ['windows','mac','linux','BeOS']<br>
+list_os.sort()<br>
+＝['BeOS', 'linux', 'mac', 'windows']
+
+list_os = ['Windows',Mmac','linux','BeOS']<br>
+list_os.sort()<br>
+＝['BeOS', 'Mac', 'Windows', 'linux']
+
+問71<br>
+オプショナル
+
+問72<br>
+test = [ ]　//空のリスト<br>
+test.append(1000)<br>
+test.append(500)<br>
+test.append(100)<br>
+＝[1000,500,100]
+
+問73<br>
+リストにも，いろいろなメソッドがある。<br>
+要素を追加するときは（insert）が使われ、要素を昇順に並べ替えるには（sort）を使う。<br>
+（reverse）を使うと，リストの並びが逆順になる。
+
+問74<br>
+list = []<br>
+list.append('Ninja')<br>
+list.append('samurai')<br>
+list.append('katana')<br>
+list.append('tonosama')<br>
+＝['ninja','samurai','katana','tonosama']
+
+問75<br>
+最初に見つけた方が消える。
+
+問76<br>
+country_code = {1:'america',39:'Italia',86:'china'}
+
+問77<br>
+81 in country_code<br>
+False<br>
+39 in country_code<br>
+True
+
+問78<br>
+{1: 'america',86: 'china', 39: 'Italia'}<br>
+country_code[81] = 'Japan'<br>
+＝{1: 'america', 81: 'Japan', 86: 'china', 39: 'Italia'}
+
+問79<br>
+country_code[81] = 'Nippon'<br>
+＝{1: 'america', 81: 'Nippon', 86: 'china', 39: 'Italia'}
+
+問80<br>
+country_code[1] = 'Nippon'<br>
+＝{1: 'Nippon', 81: 'Nippon', 86: 'china', 39: 'Italia'}
+
+問81<br>
+{1: 'Nippon', 81: 'Nippon', 86: 'china', 39: 'Italia'}<br>
+country_code.pop(1)<br>
+＝{81: 'Nippon', 86: 'china', 39: 'Italia'}
+
+問82<br>
+aaa = {}<br>
+aaa[140] = 'orange'<br>
+aaa[100] = 'apple'<br>
+＝{'orange': 140,'apple': 100}
+
+問83<br>
+fruit = {}<br>
+fruit[3] = 'orange'<br>
+fruit[11] = 'apple'<br>
+fruit[45] = 'meron'<br>
+fruit[67] = 'banana'<br>
+＝{3:'orange',11:'apple',45:'meron',67:'banana'}
+
+問84<br>
+date_a = (1, 2, 3, '100 yen')<br>
+[ ]：新しい要素の追加、削除が出来る<br>
+( )：数の変化がない。追加、削除が出来ない<br>
+しかし、list( )で名前を付けると[ ]と同じように使える
+
+問85<br>
+list(date_a)<br>
+＝[1, 2, 3, '100 yen']
+
+問86<br>
+set.add(1,2,3)<br>
+＝(1,2,3)
+
+問87<br>
+1 in set<br>
+True<br>
+10 in set<br>
+False
+
+問88<br>
+list_a = list(set)
+
+問89<br>
+list_a + list_b <br>
+list_a.extend(list_b)<br>
+list_a.insert(list_b)<br>
+list_a.append(list_b)
 
 
-</p>
+
